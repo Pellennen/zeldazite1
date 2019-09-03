@@ -11,4 +11,39 @@ body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+  margin: 0px;
 }
+
+.header {
+  width: 100%;
+  background: $zeldaGreen;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  img {
+    max-height: 100%;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      padding: 10px;
+      margin: 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 30px;
+      a {
+        color:black;
+
+        &:visited{
+          color: black;
+        }
+         &:hover {
+           color: $zeldaRed;
+           }
+        }
+      }
+    }
+  }
+
