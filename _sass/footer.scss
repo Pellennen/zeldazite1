@@ -1,0 +1,19 @@
+.footer{ 
+    position:absolute; 
+    bottom:0; 
+    width:100%; 
+    height:145px;
+    background:$zeldaBlue;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    
+     a .footerpic{
+     
+      width:200px;
+      padding:22px;
+      
+      
+      }
+      
+  }
