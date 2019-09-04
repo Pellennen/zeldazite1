@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"$backgroundColor: #ffffff;\r\n$bodyColor: #000000;\r\n$bodyFont: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";\r\n\r\n$zeldaBlue: #3953C2;\r\n$zeldaRed: #A70407;\r\n$zeldaGreen: #06830B;\r\n$zeldaWhite: white;\r\n\r\nbody {\r\n  background: $backgroundColor;\r\n  color: $bodyColor;\r\n  font-family: $bodyFont;\r\n  margin: 0px;\r\n}\r\n\r\n.header {\r\n  width: 100%;\r\n  background: $zeldaGreen;\r\n  height: 150px;\r\n  display: flex;\r\n  justify-content: center;\r\n  img {\r\n    max-height: 100%;\r\n  }\r\n  ul {\r\n    display: flex;\r\n    list-style-type: none;\r\n\r\n    li {\r\n      padding: 10px;\r\n      margin: 20px;\r\n      text-align: center;\r\n      text-decoration: none;\r\n      font-size: 30px;\r\n      a {\r\n        color:black;\r\n\r\n        &:visited{\r\n          color: black;\r\n        }\r\n         &:hover {\r\n           color: $zeldaRed;\r\n           }\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n"
+	],
+	"names": [],
+	"mappings": "ACSA,AAAA,IAAI,CAAC,EACH,UAAU,EAVM,OAAO,EAWvB,KAAK,EAVK,OAAO,EAWjB,WAAW,EAVF,aAAa,EAAC,kBAAkB,EAAC,UAAU,EAAC,SAAS,EAAC,KAAK,EAAC,UAAU,EAAC,mBAAmB,EAAC,gBAAgB,EAAC,iBAAiB,EAWtI,MAAM,EAAE,GAAG,GACZ;;AAED,AAAA,OAAO,CAAC,EACN,KAAK,EAAE,IAAI,EACX,UAAU,EAZC,OAAO,EAalB,MAAM,EAAE,KAAK,EACb,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,MAAM,GA0BtB;;AA/BH,AAME,OANK,CAML,GAAG,CAAC,EACF,UAAU,EAAE,IAAI,GACjB;;AARH,AASE,OATK,CASL,EAAE,CAAC,EACD,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,IAAI,GAmBpB;;AA9BL,AAaI,OAbG,CASL,EAAE,CAIA,EAAE,CAAC,EACD,OAAO,EAAE,IAAI,EACb,MAAM,EAAE,IAAI,EACZ,UAAU,EAAE,MAAM,EAClB,eAAe,EAAE,IAAI,EACrB,SAAS,EAAE,IAAI,GAWd;;AA7BP,AAmBM,OAnBC,CASL,EAAE,CAIA,EAAE,CAMA,CAAC,CAAC,EACA,KAAK,EAAC,KAAK,GAQV;;AA5BT,AAsBQ,OAtBD,CASL,EAAE,CAIA,EAAE,CAMA,CAAC,AAGE,QAAQ,CAAA,EACP,KAAK,EAAE,KAAK,GACb;;AAxBT,AAyBS,OAzBF,CASL,EAAE,CAIA,EAAE,CAMA,CAAC,AAMG,MAAM,CAAC,EACN,KAAK,EArCL,OAAO,GAsCN"
+}
