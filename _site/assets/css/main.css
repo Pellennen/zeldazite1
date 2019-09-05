@@ -1,20 +1,16 @@
+@font-face { font-family: "hyliaserif"; src: url("/assets/fonts/HyliaSerif.ttf"); }
+
 body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0px; cursor: red; }
 
 .header { width: 100%; background: #06830B; height: 150px; display: flex; justify-content: center; }
 
 .header img { max-height: 100%; }
 
-.header ul { display: flex; list-style-type: none; }
+.navContainer { margin-top: 50px; }
 
-.header ul li { padding: 10px; margin: 20px; text-align: center; text-decoration: none; font-size: 30px; }
+.navButton { font-size: 30px; font-family: "hyliaserif"; color: black; margin: 20px; padding: 20px; text-decoration: none; transition: all 1s; }
 
-.header ul li a { color: black; }
-
-.header ul li a:visited { color: black; }
-
-.header ul li a:hover { color: #A70407; }
-
-@font-face { font-family: "hyliaserif"; src: url("/assets/fonts/HyliaSerif.ttf"); }
+.navButton:hover { font-size: 40px; }
 
 .footer { position: absolute; bottom: 0; width: 100%; height: 145px; background: #3953C2; display: flex; justify-content: center; align-items: center; }
 
