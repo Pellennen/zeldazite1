@@ -37,31 +37,15 @@ body {
    margin-top: 50px;
 }
 
-.navContainer a {
+.navButton{
     font-size: 30px;
     font-family: $bodyFont;
     color: black;
     margin: 20px;
     padding: 20px;
     text-decoration: none; 
-    position: relative;
-    overflow: hidden;
+    transition: all 1s;
   }
-  
-
-
-  .navContainer a::after {
-    position: absolute;
-    transform: rotateZ(60deg) translate(-5em, 7.5em);
-  }
-
-  .navContainer a:hover::after, .navContainer a:focus::after {
-    animation: links 1s forwards;
-  }
-
-  @keyframes links {
-    100% {
-      transform: rotateZ(60deg) translate(1em, -9em);
-      background-color: grey;
-    }
+  .navButton:hover {
+    font-size: 40px;
   }
