@@ -1,4 +1,6 @@
-body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; margin: 0px; }
+@font-face { font-family: "hyliaserif"; src: url("/assets/fonts/HyliaSerif.ttf"); }
+
+body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0px; cursor: red; }
 
 .header { width: 100%; background: #06830B; height: 150px; display: flex; justify-content: center; }
 
@@ -6,7 +8,7 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .navContainer { margin-top: 50px; }
 
-.navContainer a { font-size: 30px; font-family: helvetica; color: black; margin: 20px; padding: 20px; text-decoration: none; position: relative; overflow: hidden; }
+.navContainer a { font-size: 30px; font-family: "hyliaserif"; color: black; margin: 20px; padding: 20px; text-decoration: none; position: relative; overflow: hidden; }
 
 .navContainer a::after { position: absolute; transform: rotateZ(60deg) translate(-5em, 7.5em); }
 
@@ -14,5 +16,9 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 @keyframes links { 100% { transform: rotateZ(60deg) translate(1em, -9em);
     background-color: grey; } }
+
+.footer { position: absolute; bottom: 0; width: 100%; height: 145px; background: #3953C2; display: flex; justify-content: center; align-items: center; }
+
+.footer a .footerpic { width: 200px; padding: 22px; }
 
 /*# sourceMappingURL=main.css.map */
