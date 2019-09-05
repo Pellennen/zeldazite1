@@ -8,6 +8,10 @@ $zeldaGreen: #06830B;
 $zeldaWhite: white;
 
 
+@font-face {
+  font-family: "hyliaserif";
+  src: url("/assets/fonts/HyliaSerif.ttf");
+}
 
 body {
   background: $backgroundColor;
@@ -27,33 +31,21 @@ body {
   img {
     max-height: 100%;
   }
-  ul {
-    display: flex;
-    list-style-type: none;
+}
 
-    li {
-      padding: 10px;
-      margin: 20px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 30px;
-      a {
-        color:black;
+.navContainer {
+   margin-top: 50px;
+}
 
-        &:visited{
-          color: black;
-        }
-         &:hover {
-           color: $zeldaRed;
-           }
-        }
-      }
-    }
+.navButton{
+    font-size: 30px;
+    font-family: $bodyFont;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    text-decoration: none; 
+    transition: all 1s;
   }
-  
-  @font-face {
-    font-family: "hyliaserif";
-    src: url("/assets/fonts/HyliaSerif.ttf");
+  .navButton:hover {
+    font-size: 40px;
   }
-
-
