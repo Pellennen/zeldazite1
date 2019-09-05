@@ -10,10 +10,12 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .navButton { font-size: 30px; font-family: "hyliaserif"; color: black; margin: 20px; padding: 20px; text-decoration: none; transition: all 1s; }
 
-.navButton:hover { font-size: 40px; }
+.navButton:hover { font-size: 40px; color: #A70407; text-decoration-line: underline; }
 
-.footer { position: absolute; bottom: 0; width: 100%; height: 145px; background: #3953C2; display: flex; justify-content: center; align-items: center; }
+.footer { bottom: 0; width: 100%; height: 145px; background: #3953C2; display: flex; justify-content: center; align-items: center; }
 
 .footer a .footerpic { width: 200px; padding: 22px; }
+
+.hyrule-BG { background-image: url("/assets/images/OcarinaOfTime/hyrulecastle.png"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; min-height: 500px; }
 
 /*# sourceMappingURL=main.css.map */
