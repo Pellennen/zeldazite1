@@ -12,7 +12,7 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .navButton:hover { font-size: 40px; }
 
-.footer { position: absolute; bottom: 0; width: 100%; height: 145px; background: #3953C2; display: flex; justify-content: center; align-items: center; }
+.footer { position: relative; bottom: 0; width: 100%; height: 145px; background: #3953C2; display: flex; justify-content: center; align-items: center; }
 
 .footer a .footerpic { width: 200px; padding: 22px; }
 
