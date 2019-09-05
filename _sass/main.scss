@@ -23,27 +23,35 @@ body {
   img {
     max-height: 100%;
   }
-  ul {
-    display: flex;
-    list-style-type: none;
+}
 
-    li {
-      padding: 10px;
-      margin: 20px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 30px;
-      a {
-        color:black;
+.navContainer {
+   margin-top: 50px;
+}
 
-        &:visited{
-          color: black;
-        }
-         &:hover {
-           color: $zeldaRed;
-           }
-        }
-      }
-    }
+.navContainer a {
+    font-size: 30px;
+    font-family: helvetica;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    text-decoration: none; 
+    position: relative;
+    overflow: hidden;
   }
 
+  .navContainer a::after {
+    position: absolute;
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+  }
+
+  .navContainer a:hover::after, .navContainer a:focus::after {
+    animation: links 1s forwards;
+  }
+
+  @keyframes links {
+    100% {
+      transform: rotateZ(60deg) translate(1em, -9em);
+      background-color: grey;
+    }
+  }

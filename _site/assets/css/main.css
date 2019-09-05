@@ -4,12 +4,15 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .header img { max-height: 100%; }
 
-.header ul { display: flex; list-style-type: none; }
+.navContainer { margin-top: 50px; }
 
-.header ul li { padding: 10px; margin: 20px; text-align: center; text-decoration: none; font-size: 30px; }
+.navContainer a { font-size: 30px; font-family: helvetica; color: black; margin: 20px; padding: 20px; text-decoration: none; position: relative; overflow: hidden; }
 
-.header ul li a { color: black; }
+.navContainer a::after { position: absolute; transform: rotateZ(60deg) translate(-5em, 7.5em); }
 
-.header ul li a:visited { color: black; }
+.navContainer a:hover::after, .navContainer a:focus::after { animation: links 1s forwards; }
 
-.header ul li a:hover { color: #A70407; }
+@keyframes links { 100% { transform: rotateZ(60deg) translate(1em, -9em);
+    background-color: grey; } }
+
+/*# sourceMappingURL=main.css.map */
