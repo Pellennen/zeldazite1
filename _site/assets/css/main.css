@@ -1,4 +1,4 @@
-body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; margin: 0px; cursor: red; }
+body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0px; cursor: red; }
 
 .header { width: 100%; background: #06830B; height: 150px; display: flex; justify-content: center; }
 
@@ -13,6 +13,8 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 .header ul li a:visited { color: black; }
 
 .header ul li a:hover { color: #A70407; }
+
+@font-face { font-family: "hyliaserif"; src: url("/assets/fonts/HyliaSerif.ttf"); }
 
 .footer { position: absolute; bottom: 0; width: 100%; height: 145px; background: #3953C2; display: flex; justify-content: center; align-items: center; }
 
