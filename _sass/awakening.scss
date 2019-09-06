@@ -1,0 +1,24 @@
+$h: 250px;
+$w: 250px;
+$src: "../assets/images/awakening/linkmap.png";
+$f: flex;
+$c: center;
+
+.bodycontent{
+   background-image: url($src);
+}
+.title{
+    grid-column: 1;
+    grid-row: 1;
+}
+.pic{
+    display: $f;
+    align-items: $c;
+    
+    grid-column: 2;
+    grid-row: 1,
+}
+.pic img{
+    width: $w;
+    height: $h;
+}
