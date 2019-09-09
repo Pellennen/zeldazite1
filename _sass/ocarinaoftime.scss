@@ -1,0 +1,268 @@
+
+.hyrule-BG{
+    background-image: url("/assets/images/OcarinaOfTime/hyrulecastle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 800px;
+    clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+    display: block;
+}
+
+
+.hyruleContainer{
+    display: flex;
+    padding: 20px;
+
+    .hyruleSection{
+        margin-left: 100px;
+        margin-top: 100px;
+        width: 50%;
+        align-content: flex-start;
+
+        h1{
+            font-size: 60px;
+            color: $zeldaRed;
+            text-shadow: -1px 0 $zeldaWhite, 0 1px $zeldaWhite, 1px 0 $zeldaWhite, 0 -1px $zeldaWhite;
+            text-align: center;
+            align-content: center;
+        }
+
+        p{
+            font-size: 25px;
+            color: $zeldaWhite;
+            align-content: center;
+        }
+
+        img{
+            box-shadow: -1px 10px 25px -4px rgba(0,0,0,0.75);
+            
+        }
+    }
+    
+}
+
+
+.ganondorf-BG{
+    background-image: url("/assets/images/OcarinaOfTime/ganondorf.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 900px;
+    clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+    display: block;
+    margin-top: -150px;
+    
+}
+
+.ganondorf-container{
+    display: flex;
+    padding: 20px;
+    margin-left: 500px;
+    .ganondorf-section{
+        justify-content: flex-end;
+        margin-top: 100px;
+        padding: 40px;
+
+        h2{
+            color: $zeldaWhite;
+            text-align: center;
+            font-size: 60px;
+        }
+        p {
+            color: $zeldaWhite;
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+}
+
+.empty-BG{
+    background-color: black;
+    display:block;
+    height: 500px;
+    width: 100%;
+
+}
+
+.empty-container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: start;
+    justify-content: space-around;
+
+    .empty-header{
+        grid-column: 2;
+        grid-row: 1;
+        h1{
+            color: $zeldaWhite;
+            text-align: center;
+            font-size: 40px;
+        }
+        p{
+            color: $zeldaWhite;
+            text-align: center;
+        }
+    }
+    .empty-shield{
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: center;
+        img{
+            width: 200px;
+        }
+        p {
+            color: $zeldaWhite;
+            text-align:center;
+        }
+
+    }
+    .empty-sword{
+        grid-column: 2;
+        grid-row: 2;
+        justify-content: center;
+        img{
+            margin-top: 25px;
+            width: 300px;
+        }
+        p {
+            color: $zeldaWhite;
+            text-align: center;
+        }
+
+    }
+    .empty-ocarina{
+        grid-column: 3;
+        grid-row: 2;
+        justify-content: center;
+        img{
+            margin-top: 20px;
+            width: 200px;
+        }
+        p {
+            color: $zeldaWhite;
+            text-align: center;
+        }
+    }
+}
+
+.kakariko-BG {
+    background-image: url("/assets/images/OcarinaOfTime/kakariko-graveyard.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 900px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+    display: block;
+}
+
+.kakariko-container{
+    padding: 70px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
+    .kakariko-section{
+        align-self: flex-start;
+        width: 50%;
+        h2{
+            text-align: center;
+            font-size: 50px;
+            color: $zeldaWhite;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+            color: $zeldaWhite;
+        }
+    }
+    .kakariko-image{
+        align-self: flex-end;
+
+        img{
+            width: 300px;
+            height: auto;
+            box-shadow: -1px 10px 25px -4px rgba(0,0,0,0.75);
+
+        }
+        p{
+            width: 300px;
+            color: $zeldaWhite;
+        }
+    }
+}
+
+.temple-BG{
+    background-image: url("/assets/images/OcarinaOfTime/Temple.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 900px;
+    clip-path: polygon(0 0, 100% 16%, 100% 100%, 0 100%);
+    display: block;  
+    margin-top: -180px;
+}
+
+.temple-container{
+    padding: 100px;
+    height: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+
+    .temple-section{
+        margin-top: 100px;
+        order: 0;
+        flex: 1000 1 auto;
+        align-self: flex-start;
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: $zeldaWhite;
+        }
+        p{
+            font-size: 20px;
+            text-align: center;
+            color: $zeldaWhite;
+        }
+    }
+    .temple-quote{
+        order: 0;
+        flex: 0 1 auto;
+        align-self: center;
+        margin: 20px;
+        h2{
+            font-size: 30px;
+            color: $zeldaWhite;
+        }
+        p{
+            font-size: 15px;
+            color: $zeldaWhite;
+        }
+    }
+    .nintendo64{
+        width: 100px;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: flex-end;
+        img{
+            width: 60px;
+        }
+        p{
+            font-size: 15px;
+            color: $zeldaWhite;
+        }
+    }
+}
