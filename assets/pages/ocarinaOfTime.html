@@ -11,6 +11,16 @@ layout: default
                 <p>Links first 3D adventure - The Legend of Zelda: Ocarina of time.</p>
                 <img src="/assets/images/OcarinaOfTime/gamebox.png" alt="">
             </div>
+
+            <svg viewBox="0 0 595.3 841.9">
+                <filter id="displacementFilter">
+                        <feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="7" result="turbulence"/>
+                    <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="50" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+                <polygon id="TriForcePoly1" style="filter: url(#displacementFilter); transform-origin: center;" fill="#3953C2" points="277.5,246 235,316.4 320,316.4 "/>
+                <polygon id="triForcePoly2" style="filter: url(#displacementFilter); transform-origin: center;" fill="#A70407" class="st0" points="277.5,390 194,390 235,316.4 "/>
+                <polyline id="triForceLine" style="filter: url(#displacementFilter); transform-origin: center;" fill="#06830B" points="320,316.4 361,390 277.5,390 "/>
+            </svg>
     </div>
 
 </div>
@@ -105,4 +115,5 @@ layout: default
     </div>
 
 </div>
-
+<script src="/assets/JS/anime-master/lib/anime.min.js"></script>
+<script src="/assets/JS/ocarina-script.js"></script>
