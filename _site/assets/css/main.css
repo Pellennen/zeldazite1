@@ -124,6 +124,8 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .waterbg .secondC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; height: 250px; background-repeat: no-repeat; border: 15px; padding: 50px; margin: 90px; float: right; }
 
+.waterbg .medli { padding-top: 200px; }
+
 .carousel { background-image: url("/assets/images/windwaker/water-bg-2.jpg"); width: 100%; background-attachment: fixed; padding: 30px; position: relative; box-sizing: border-box; text-align: center; }
 
 .carousel__container { white-space: nowrap; margin: 70px 0px; padding-bottom: 10px; }
