@@ -116,7 +116,9 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .windwakerbg { background-image: url("/assets/images/windwaker/windwakerbg.png"); background-repeat: no-repeat; background-color: #3953C2; background-attachment: fixed; background-size: cover; min-height: 600px; display: block; }
 
-.windwakerbg .firstC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; height: 250px; background-repeat: no-repeat; border: 15px; padding: 50px; margin: 120px; float: right; }
+.windwakerbg .firstC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; height: 250px; background-repeat: no-repeat; border: 15px; padding: 40px; margin: 120px; float: right; }
+
+.windwakerbg .hylianshield { height: 300px; padding-top: 2%; margin-left: 3%; }
 
 .waterbg { background-image: url("/assets/images/windwaker/water-bg-3.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; min-height: 600px; }
 
