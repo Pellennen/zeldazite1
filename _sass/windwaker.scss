@@ -9,6 +9,20 @@
     min-height: 600px;
     
     display: block;
+
+    .firstC {
+        background-image: url("/assets/images/windwaker/text-container.png");
+        width: 200px;
+        height: 250px;
+        background-repeat: no-repeat;
+        border: 15px ;
+        padding: 50px;
+        margin: 120px;
+        float:right;
+        
+        
+          
+      }
    
    
 }
@@ -21,6 +35,28 @@
     min-height: 600px;
     
     display: block; 
+   
+    .secondC{
+        position: relative;
+  .bigcont{
+    width: 50%;
+    height: auto;
+  }
+   h1{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+    font-size: 30px;
+   }
+   p{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    
+    font-size: 12px;
+   }
+    }
 }
 
 
@@ -102,3 +138,6 @@
  }
 
  
+
+
+  

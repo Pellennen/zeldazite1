@@ -116,7 +116,17 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .windwakerbg { background-image: url("/assets/images/windwaker/windwakerbg.png"); background-repeat: no-repeat; background-color: #3953C2; background-attachment: fixed; background-size: cover; min-height: 600px; display: block; }
 
+.windwakerbg .firstC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; height: 250px; background-repeat: no-repeat; border: 15px; padding: 50px; margin: 120px; float: right; }
+
 .waterbg { background-image: url("/assets/images/windwaker/water-bg-3.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; min-height: 600px; display: block; }
+
+.waterbg .secondC { position: relative; }
+
+.waterbg .secondC .bigcont { width: 50%; height: auto; }
+
+.waterbg .secondC h1 { position: absolute; top: 20%; left: 20%; text-align: center; font-size: 30px; }
+
+.waterbg .secondC p { position: absolute; top: 40%; left: 10%; font-size: 12px; }
 
 .carousel { background-image: url("/assets/images/windwaker/water-bg-2.jpg"); width: 100%; background-attachment: fixed; padding: 30px; position: relative; box-sizing: border-box; text-align: center; }
 

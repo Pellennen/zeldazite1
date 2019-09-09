@@ -5,15 +5,35 @@ title: "Happy Jekylling!"
 
 
 
-<input type="button" value="PLAY"  onclick="play()">
-<audio id="audio" src="http://dev.interactive-creation-works.net/1/1.ogg" ></audio>
+
+
+
 <div class="windwakerbg">
+        
+<audio id="myAudio">
+
+                <source src="/assets/images/windwaker/theme.mp3" type="audio/mpeg">
+                
+              </audio>  
+                <img src="/assets/images/windwaker/music-player.svg" height="20" size="150" alt="play" onclick="playAudio()">
+                <img src="/assets/images/windwaker/video-pause-button.svg"height="20" size="150" alt="pause" onclick="pauseAudio()">
                    <div class="firstC">
-                           <div></div>
+                     <h2>Adventure
+                        on the Great Sea</h2>
+                     <p>Cruise across the Great Sea with King of Red Lions, the wisest—and most talkative—of boats, propelled by a magical sail. </p>
                    </div>
         
 </div>
-<div class="waterbg"></div>
+<div class="waterbg">
+  <div class="secondC">
+
+      <img src="/assets/images/windwaker/textcontainer2.png"class="bigcont">
+      <h1>The Wind Waker</h1>
+      <p>some info text</p>
+  </div>
+
+  
+</div>
 
 
 
@@ -67,4 +87,4 @@ title: "Happy Jekylling!"
               </section>
 
 
-              <script src="/assets/"></script>
+              <script src="/assets/js/windwaker.js"></script>
