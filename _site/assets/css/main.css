@@ -116,15 +116,45 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .windwakerbg { background-image: url("/assets/images/windwaker/windwakerbg.png"); background-repeat: no-repeat; background-color: #3953C2; background-attachment: fixed; background-size: cover; min-height: 600px; display: block; }
 
-.windwakerbg .firstC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; height: 250px; background-repeat: no-repeat; border: 15px; padding: 40px; margin: 120px; float: right; }
+.windwakerbg .firstC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; max-height: 40px; background-repeat: no-repeat; border: 15px; padding: 40px; margin: 120px; transition: 2s ease-out; float: right; opacity: 0.7; }
 
-.windwakerbg .hylianshield { height: 300px; padding-top: 2%; margin-left: 3%; }
+.windwakerbg .firstC p { opacity: 0; transition: 1s; }
+
+.windwakerbg .firstC:hover { max-height: 260px; transition: 2s ease-out; cursor: none; opacity: 1; }
+
+.windwakerbg .firstC:hover p { opacity: 1; transition: 5s; }
+
+.windwakerbg .hylianshield { height: 300px; padding-top: 2%; margin-left: 3%; transform: translatey(0px); animation: float 6s ease-in-out infinite; }
+
+@keyframes float { 0% { transform: translatey(0px); }
+  50% { transform: translatey(-20px); }
+  100% { transform: translatey(0px); } }
 
 .waterbg { background-image: url("/assets/images/windwaker/water-bg-3.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; min-height: 600px; }
 
-.waterbg .firstC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; height: 250px; background-repeat: no-repeat; border: 15px; padding: 50px; margin: 50px; float: left; }
+.waterbg .firstC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; max-height: 20px; background-repeat: no-repeat; border: 15px; padding: 50px; margin: 50px; float: left; transition: 2s ease-out; opacity: 0.7; }
 
-.waterbg .secondC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; height: 250px; background-repeat: no-repeat; border: 15px; padding: 50px; margin: 90px; float: right; }
+.waterbg .firstC p { opacity: 0; transition: 1s; }
+
+.waterbg .firstC img { opacity: 0; transition: 1s ease-out; }
+
+.waterbg .firstC:hover { max-height: 260px; transition: 2s ease-out; cursor: none; opacity: 1; }
+
+.waterbg .firstC:hover p { opacity: 1; transition: 5s; }
+
+.waterbg .firstC:hover img { opacity: 1; transition: 3s; transform: translatey(0px); animation: float 6s ease-in-out infinite; }
+
+.waterbg .secondC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; max-height: 20px; background-repeat: no-repeat; border: 15px; padding: 50px; margin: 90px; float: right; transition: 2s ease-out; opacity: 0.7; }
+
+.waterbg .secondC p { opacity: 0; transition: 1s; }
+
+.waterbg .secondC img { opacity: 0; transition: 1s ease-out; }
+
+.waterbg .secondC:hover { max-height: 260px; transition: 2s ease-out; cursor: none; opacity: 1; }
+
+.waterbg .secondC:hover p { opacity: 1; transition: 5s; }
+
+.waterbg .secondC:hover img { opacity: 1; transition: 3s; transform: translatey(0px); animation: float 6s ease-in-out infinite; }
 
 .waterbg .medli { padding-top: 200px; }
 
