@@ -8,4 +8,3 @@ function pauseAudio() {
   x.pause(); 
 } 
 
-
