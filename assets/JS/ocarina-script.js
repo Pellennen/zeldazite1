@@ -16,7 +16,8 @@ timeLine.add({
     
     baseFrequency: 0,
     numOctaves: 5,
-    rotate: '300deg',
+    rotate: 'deg',
+    translateX: -100,
     scale: 1,
     fill: '#fff',
     fillOpacity: '1',
@@ -27,14 +28,28 @@ timeLine.add({
 
 timeLine.add({
     targets: ['#triForcePoly2', 'feTurbulence', 'feDisplacementMap' ],
+    translateX: -100,
+    duration: 700
 })
 
 timeLine.add({
     targets: ['#triForceLine', 'feTurbulence', 'feDisplacementMap' ],
+    rotateY: '200deg',
+    translateY: 100,
+    duration: 500
 })
 
 timeLine.add({
+    targets: ['#triForcePoly1','#triForcePoly2','#triForceLine'],
+    scale: 1,
+    fillOpacity: 0, 
+    translateY: -200,
+    duration: 700
+})
+
+/* timeLine.add({
     targets: 'svg',
     scale: 0,
+    fillOpacity: 0,
     duration: 500
-})
+}) */
