@@ -16,10 +16,25 @@ $sa: space-around;
 $c: center;
 $start: start;
 
+.body {
+  background-color: rgb(3,142,159);
+  border: 3px solid rgb(14,100,120);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 50% 30px;
+  border-bottom-right-radius: 50% 30px;
+  height: 3000px;
+  width: 100%;
+  // top: 10px;
+  // left: 10px;
+  // position: absolute;
+  z-index: -1;
+}
+
 .power-box {
     /*   background-color: blue; */
       top: 400px;
-      left: 75px;
+      left: 50px;
       height: 22px;
       position: absolute;
     }
@@ -27,7 +42,7 @@ $start: start;
     .power-light {
       background-color: black;
       position: relative;
-    //   left: 1px;
+      left: 1px;
       height: 20px;
       width: 20px;
       border-radius: 50%;
@@ -40,8 +55,9 @@ $start: start;
     .power-status {
       color: darkgray;
       font-weight: bold;
-      line-height: .5;
+      line-height: 0.5;
       position: absolute;
+      font-size: 30px;
       right: 1px;
       top: 0px;
       transform: scaleY(.5);
@@ -56,7 +72,6 @@ $start: start;
 .screen-box {
     display: $f;
     flex-direction: column;
-    justify-content: $c;
     align-items: $c;
     background-color: rgb(54,58,61);
     border-top-left-radius: 5px;
@@ -64,20 +79,15 @@ $start: start;
     border-bottom-left-radius: 50% 15px;
     border-bottom-right-radius: 50% 15px;
     box-shadow: 1px 1px black;
-    height: 2400px;
-    width: 100%;
+    height: 75%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    top: 17px;
+    margin-top: 25px;
   }
 
   
-  .screen-logo-shadow {
-    font: italic bold x-large "futura", sans-serif;
-    position: relative;
-    top: 19px;
-    transform: translateX(1px);
-  }
+  // 
   .gameboy-color-logo {
     position: relative;
     bottom: -37px;
@@ -128,8 +138,203 @@ $start: start;
     display: inline-block;
     transform: scaleY(1.2);
   }
+  .nintendo-logo-body {
+    border: 2px solid rgb(0,107,128);
+    border-radius: 10px/50%;
+    box-sizing: border-box;
+    color: rgb(0,107,128);
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    height: 45px;
+    width: 200px;
+  }
   
-
+  .button-box {
+  /*   background-color: blue; */
+    height: 250px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 45px;
+  }
+  
+  .arrow-group {
+    height: 200px;
+    width: 200px;
+  /*   background-color: yellow; */
+    position: absolute;
+  
+  }
+  .up-box {
+    background-color: rgb(127,117,116);
+    border-radius: 4px 4px 0 0;
+    box-shadow: 2px 2px 4px black, inset 2px 2px 4px darkgray, -1px -1px 2px black;
+    height: 33%;
+    width: 33%;
+    left: 33%;
+    position: absolute;
+  }
+  
+  .right-box {
+    background-color: rgb(127,117,116);
+    border-radius: 0 4px 4px 0;
+    box-shadow: 2px 2px 4px black, inset 0px 4px 4px -2px darkgray, -1px -1px 2px black;
+    height: 33%;
+    width: 33%;
+    right: 0%;
+    top: 33%;
+    position: absolute;
+  }
+  
+  .down-box {
+    background-color: rgb(127,117,116);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 2px 2px 4px black, inset 4px 0px 4px -2px darkgray, -1px -1px 2px black;
+    height: 34%;
+    width: 33%;
+    bottom: 0%;
+    left: 33%;
+    position: absolute;
+  }
+  
+  .center-box {
+    background-color: rgb(127,117,116);
+    height: 33%;
+    width: 33%;
+    left: 33%;
+    top: 33%;
+    position: absolute;
+  }
+  
+  .left-box {
+    background-color: rgb(127,117,116);
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0px 4px 4px -2px black, inset 2px 2px 4px darkgray, -1px -1px 2px black;
+    height: 33%;
+    width: 33%;
+    top: 33%;
+    position: absolute;
+  }
+  
+  .arrow {
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 18px solid rgb(75,70,66);
+    left: 25px;
+    top: 22px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .arrow::after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid rgb(89,79,77);
+    left: -7px;
+    top: 3px;
+    position: absolute;
+  }
+  
+  .right {
+    transform: rotate(90deg);
+  }
+  
+  .down {
+    transform: rotate(180deg);
+  }
+  
+  .left {
+    transform: rotate(270deg);
+  }
+  
+  .dent {
+    background-color: rgb(75,70,66);
+    border-radius: 50%;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+    height: 27px;
+    width: 27px;
+  }
+  
+  .dent-highlight {
+    background-color: rgb(155,145,144);
+    border-radius: 50%;
+    box-shadow: 0 0 6px 3px rgb(155,145,144);
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+  }
+  
+  .ab-button {
+    background-color: rgb(78,70,68);
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black, inset 2px 2px 2px darkgray, -1px -1px 2px black;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(55,40,47);
+    text-shadow: 1px 1px 1px rgb(89,79,77);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+  }
+  
+  .a {
+    right: 0px;
+    top: 10px;
+  }
+  
+  .b {
+    bottom: 13px;
+    right: 90px;
+  }
+  
+  .button-text-height {
+    transform: scaleY(3);
+    position: absolute;
+    top: 40px;
+    left: 45px;
+  }
+  
+  .pill-button {
+    background-color: rgb(81,88,80);
+    border-radius: 8px/50%;
+    box-shadow: 2px 2px 2px black, inset 2px 1px 2px darkgray, -1px -1px 2px black;
+    color: rgb(24,152,165);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 10px;
+    text-shadow: 1px 1px rgb(1,127,148), -1px -1px .5px rgb(76,199,215);
+    height: 10px;
+    width: 33px;
+    position: absolute;
+    bottom: 92px;
+  }
+  
+  .button-select {
+    // left: 120px;
+    margin-left: auto;
+  }
+  
+  .button-start {
+    // right: 120px;
+    margin-right: auto;
+  }
+  
+  
 
 .bodycontent{
     background-color: lightgray;
@@ -174,12 +379,12 @@ $start: start;
     transform: rotateY(180deg);
 }
 
-.sec-2{
+// .sec-2{
   
-    display: $f;
-    flex-direction: row;
-    align-items: $c;
-}
+//     display: $f;
+//     flex-direction: row;
+//     align-items: $c;
+// }
 #divzdxMabe{
     display: $f;
     flex-direction: row;
@@ -210,6 +415,5 @@ $start: start;
 #change_image{
     width: $w*1.24;
     height: $h*1.24;
-    
-}
 
+}
