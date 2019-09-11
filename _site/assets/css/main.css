@@ -116,8 +116,6 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .pic img { width: 250px; height: 250px; }
 
-<<<<<<< HEAD
-=======
 .windwakerbg { background-image: url("/assets/images/windwaker/windwakerbg.png"); background-repeat: no-repeat; background-color: #3953C2; background-attachment: fixed; background-size: cover; min-height: 600px; display: block; }
 
 .windwakerbg .firstC { background-image: url("/assets/images/windwaker/text-container.png"); width: 200px; height: 250px; background-repeat: no-repeat; border: 15px; padding: 50px; margin: 120px; float: right; }
@@ -152,5 +150,4 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .carousel-item__details--icons { color: #caa5f1; }
 
->>>>>>> ddb8d796f3c09b2051100c292d20736644d5916c
 /*# sourceMappingURL=main.css.map */

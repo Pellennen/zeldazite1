@@ -14,7 +14,7 @@ layout: default
 
             <svg viewBox="0 0 595.3 841.9">
                 <filter id="displacementFilter">
-                        <feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="7" result="turbulence"/>
+                        <feTurbulence type="turbulence" baseFrequency="0.3" numOctaves="2" result="turbulence"/>
                     <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="50" xChannelSelector="R" yChannelSelector="G"/>
                 </filter>
                 <polygon id="triForcePoly1" style="filter: url(#displacementFilter); transform-origin: center;" fill="#3953C2" points="277.5,246 235,316.4 320,316.4 "/>
@@ -47,7 +47,7 @@ layout: default
             <p>Explore the temples and dungeons to find a huge variety of items.</p>
         </div>
         <div class="empty-shield">
-            <img src="/assets/images/OcarinaOfTime/shield.jpg" alt="">
+            <img id="shield" src="/assets/images/OcarinaOfTime/shield.jpg" alt="">
             <p>Hylian shield</p>
         </div>
         <div class="empty-sword">
