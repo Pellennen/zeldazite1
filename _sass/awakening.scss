@@ -181,20 +181,30 @@ $start: start;
     align-items: $c;
 }
 #divzdxMabe{
-    
     display: $f;
     flex-direction: row;
     justify-content: $c;
     align-items: $c;
     align-content: center;
 }
+#story{
+  display: $f;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#items{
+  display: $f;
+  justify-content: $sa;
+  flex-direction: row;
+
+}
 #cartridge{
     width: $w;
     height: $h;
 }
 #artwork{
-  width: $w;
-  height: 300px;
+  width: 300px;
+  height:400px;
 }
 
 #change_image{
