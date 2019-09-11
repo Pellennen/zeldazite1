@@ -78,11 +78,25 @@ body { background: #ffffff; color: #000000; font-family: "hyliaserif"; margin: 0
 
 .kakariko-container .kakariko-section p { font-size: 20px; text-align: center; color: white; }
 
-.kakariko-container .kakariko-image { align-self: flex-end; }
+.kakariko-container .kakariko-image { align-self: flex-end; position: absolute; }
+
+.kakariko-container .kakariko-image:hover p { display: none; }
 
 .kakariko-container .kakariko-image img { width: 300px; height: auto; box-shadow: -1px 10px 25px -4px rgba(0, 0, 0, 0.75); }
 
+.kakariko-container .kakariko-image img:hover { top: 2300px; transition: 0.5s; width: 400px; }
+
 .kakariko-container .kakariko-image p { width: 300px; color: white; }
+
+.kakariko-container .kakariko-image2 { align-self: flex-end; position: absolute; top: 2600px; }
+
+.kakariko-container .kakariko-image2:hover p { display: none; }
+
+.kakariko-container .kakariko-image2 img { width: 300px; height: auto; box-shadow: -1px 10px 25px -4px rgba(0, 0, 0, 0.75); }
+
+.kakariko-container .kakariko-image2 img:hover { transition: 0.5s; width: 400px; }
+
+.kakariko-container .kakariko-image2 p { width: 300px; color: white; }
 
 .temple-BG { background-image: url("/assets/images/OcarinaOfTime/Temple.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; min-height: 900px; clip-path: polygon(0 0, 100% 16%, 100% 100%, 0 100%); display: block; margin-top: -180px; }
 

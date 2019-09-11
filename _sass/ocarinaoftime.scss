@@ -196,12 +196,40 @@
     }
     .kakariko-image{
         align-self: flex-end;
-
+        position: absolute;
+        &:hover{
+            p{display:none;}
+        }
         img{
             width: 300px;
             height: auto;
             box-shadow: -1px 10px 25px -4px rgba(0,0,0,0.75);
-
+            &:hover{
+                top:2300px;
+                transition: 0.5s;
+                width: 400px;
+                }
+        }
+        p{
+            width: 300px;
+            color: $zeldaWhite;
+        }
+    }
+    .kakariko-image2{
+        align-self: flex-end;
+        position: absolute;
+        top: 2600px;
+        &:hover{
+            p{display:none;}
+        }
+        img{
+            width: 300px;
+            height: auto;
+            box-shadow: -1px 10px 25px -4px rgba(0,0,0,0.75);
+                &:hover{
+                transition: 0.5s;
+                width: 400px;
+                }
         }
         p{
             width: 300px;

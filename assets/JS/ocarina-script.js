@@ -101,37 +101,30 @@ timeLine.add({
     duration: 500
 })
 
-    anime({
-        targets: '.empty-shield',
-        keyframes: [
-            {translateX: -100},
-            {translateX: 0 }
-        ],
-        easing: 'easeOutSine',
-        duration: 2000,
-    })
 
-    anime({
-        targets: '.empty-sword',
-        keyframes: [
-            {translateY: -50, scale: 1.5},
-            {translateY: 0, scale: 1}
-        ],
-        duration: 2000,
-        easing: 'easeOutSine'
-    })
-
-    anime({
-        targets: '.empty-ocarina',
-        keyframes: [
-            {translateX: 100},
-            {translateX: 0 },
-        ],
-        easing: 'easeOutSine',
-        duration: 2000,
-    })
+window.onscroll = function(){emptyScroller()};
 
  function emptyScroller(){
 
- }
+    let animation = anime({
+        targets: '.empty-sword, .empty-shield, .empty-ocarina',
+        keyframes: [
+            {rotate: '-30deg', scale: 1},
+            {rotate: '30deg', scale: 1},
+            {rotate: '-30deg', scale: 1},
+            {rotate: '30deg', scale: 1},
+            {rotate: '0deg', scale: 1}
+        ],
+        duration: 600,
+        easing: 'easeOutSine',
+        autoplay: false
+    })
+
+
+    if (document.body.scrollTop > 1500  || document.body.scrollTop < 1501
+        /* document.documentElement.scrollTop > 1500 || document.documentElement.scrollTop < 1502 */ ) {
+        console.log('hejhej');
+        animation.play();
+    }
+ };
      
