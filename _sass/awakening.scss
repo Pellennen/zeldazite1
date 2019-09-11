@@ -1,10 +1,13 @@
-$h: 250px;
-$w: 250px;
+$h: 200px;
+$w: 200px;
 $src: "/assets/images/awakening/linkmap.png";
 $f: flex;
 $c: center;
 $fontcolor: white;
-$textborder: black;
+$textborder: -1px -1px 0 #000,  
+1px -1px 0 #000,
+-1px 1px 0 #000,
+ 1px 1px 0 #000;
 $grid: grid;
 $templatecolumn: repeat(auto-fit, minmax(260px,1fr));
 $templaterow: repeat(auto-fit, minmax(200px,1fr));
@@ -163,6 +166,7 @@ $start: start;
     border-radius: 10px;
     justify-content: $c;
     align-items: $c;
+    flex-direction: column;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -184,14 +188,18 @@ $start: start;
     align-items: $c;
     align-content: center;
 }
-figure>#cartridge{
+#cartridge{
     width: $w;
     height: $h;
 }
+#artwork{
+  width: $w;
+  height: 300px;
+}
 
 #change_image{
-    width: $w;
-    height: $h;
+    width: $w*1.24;
+    height: $h*1.24;
     
 }
 
