@@ -11,6 +11,16 @@ layout: default
                 <p>Links first 3D adventure - The Legend of Zelda: Ocarina of time.</p>
                 <img src="/assets/images/OcarinaOfTime/gamebox.png" alt="">
             </div>
+
+            <svg viewBox="0 0 595.3 841.9">
+                <filter id="displacementFilter">
+                        <feTurbulence type="turbulence" baseFrequency="0.3" numOctaves="2" result="turbulence"/>
+                    <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="50" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+                <polygon id="triForcePoly1" style="filter: url(#displacementFilter); transform-origin: center;" fill="#3953C2" points="277.5,246 235,316.4 320,316.4 "/>
+                <polygon id="triForcePoly2" style="filter: url(#displacementFilter); transform-origin: center;" fill="#A70407" class="st0" points="277.5,390 194,390 235,316.4 "/>
+                <polyline id="triForceLine" style="filter: url(#displacementFilter); transform-origin: center;" fill="#06830B" points="320,316.4 361,390 277.5,390 "/>
+            </svg>
     </div>
 
 </div>
@@ -37,7 +47,7 @@ layout: default
             <p>Explore the temples and dungeons to find a huge variety of items.</p>
         </div>
         <div class="empty-shield">
-            <img src="/assets/images/OcarinaOfTime/shield.jpg" alt="">
+            <img id="shield" src="/assets/images/OcarinaOfTime/shield.jpg" alt="">
             <p>Hylian shield</p>
         </div>
         <div class="empty-sword">
@@ -70,7 +80,7 @@ layout: default
             <img src="/assets/images/OcarinaOfTime/context.jpg" alt="">
             <p>The on-screen display shows actions mapped to context-sensitive buttons.</p>
         </div>
-        <div class="kakariko-image">
+        <div class="kakariko-image2">
             <img src="/assets/images/OcarinaOfTime/z-targeting.jpg" alt="">
             <p>When the player uses Z-targeting, the view shifts to a letterbox format and arrows indicate the targeted enemy. The player can then circle strafe around the enemy to keep their sight on them</p>
         </div>
@@ -105,4 +115,5 @@ layout: default
     </div>
 
 </div>
-
+<script src="/assets/JS/anime-master/lib/anime.min.js"></script>
+<script src="/assets/JS/ocarina-script.js"></script>
