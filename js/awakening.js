@@ -1,11 +1,11 @@
 function change_image() {
   let url = document.querySelector('img#change_image').src;
-  console.log(url);
-    if(url == 'http://localhost:4000/assets/images/awakening/linkright.png') {
-      document.querySelector('img#change_image').src = 'http://localhost:4000/assets/images/awakening/linkleft.png';
+  
+    if(url == 'https://priceless-noyce-782d70.netlify.com/assets/images/awakening/linkright.png') {
+      document.querySelector('img#change_image').src = 'https://priceless-noyce-782d70.netlify.com/assets/images/awakening/linkleft.png';
     } 
     else{
-      document.querySelector('img#change_image').src = 'http://localhost:4000/assets/images/awakening/linkright.png';
+      document.querySelector('img#change_image').src = 'https://priceless-noyce-782d70.netlify.com/assets/images/awakening/linkright.png';
     }
 }
 setInterval(change_image, 500);
