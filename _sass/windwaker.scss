@@ -13,17 +13,55 @@
     .firstC {
         background-image: url("/assets/images/windwaker/text-container.png");
         width: 200px;
-        height: 250px;
+        max-height: 40px;
         background-repeat: no-repeat;
         border: 15px ;
-        padding: 50px;
+        padding: 40px;
         margin: 120px;
+        transition:2s ease-out;
         float:right;
-        
-        
-          
+        opacity:0.7;
+        p{
+         opacity: 0; 
+         transition: 1s;  
+        }
+    
+        &:hover{
+            max-height:260px;
+            transition: 2s ease-out ;
+            cursor:none;
+            opacity:1;
+            
+            p{
+                opacity:1;
+                transition:5s;
+            }
+        }
       }
-   
+   .hylianshield{
+       height:300px;
+      padding-top:2%;
+      margin-left:3%;
+      transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;   
+      @keyframes float {
+        0% {
+            
+            transform: translatey(0px);
+        }
+        50% {
+            
+            transform: translatey(-20px);
+        }
+        100% {
+            
+            transform: translatey(0px);
+        }
+    }
+       
+       
+       
+   }
 }
 .waterbg{
     background-image: url("/assets/images/windwaker/water-bg-3.jpg");
@@ -35,29 +73,86 @@
     .firstC {
         background-image: url("/assets/images/windwaker/text-container.png");
         width: 200px;
-        height: 250px;
+        max-height: 20px;
         background-repeat: no-repeat;
         border: 15px ;
         padding: 50px;
         margin: 50px;
         float:left;
-        
+        transition:2s ease-out;
+        opacity:0.7;
+       
+        p{
+            opacity: 0; 
+            transition: 1s;  
+           }
+        img{
+            opacity:0;
+            transition:1s ease-out;
+        }
+           &:hover{
+               max-height:260px;
+               transition: 2s ease-out ;
+               cursor:none;
+               opacity:1;
+               
+               p{
+                   opacity:1;
+                   transition:5s;
+               }
+               img{
+                   opacity:1;
+                   transition: 3s;
+                   transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;    
+               }
+           }
         
           
       }
     .secondC {
         background-image: url("/assets/images/windwaker/text-container.png");
         width: 200px;
-        height: 250px;
+        max-height: 20px;
         background-repeat: no-repeat;
         border: 15px ;
         padding: 50px;
         margin: 90px;
         float:right;
+        transition: 2s ease-out;
+        opacity:0.7;
+
+        p{
+            opacity: 0; 
+            transition: 1s;  
+           }
+        img{
+            opacity:0;
+            transition:1s ease-out;
+        }
+           &:hover{
+               max-height:260px;
+               transition: 2s ease-out ;
+               cursor:none;
+               opacity:1;
+               
+               p{
+                   opacity:1;
+                   transition:5s;
+               }
+               img{
+                   opacity:1;
+                   transition: 3s;
+                   transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;    
+               }
+           }
     }
 
     .medli{
        padding-top: 200px;
+
+       
        }
  
     
@@ -90,8 +185,8 @@
     overflow: hidden;
     margin-right: 10px;
     display: inline-block;
-    cursor: pointer;
-    transition: 450ms all;
+    cursor: none;
+    transition: 800ms all;
     transform-origin: center left;
     position: relative;
  }
@@ -128,19 +223,21 @@
     flex-flow: row wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
  }
  .carousel-item__details:hover {
     opacity: 1;
+
  }
  .carousel-item__details--title {
-   font-size: 15px;
+   font-size: 24px;
  }
  
  .carousel-item__details--icons {
    color: #caa5f1;
  }
-
+ 
+ 
  
 
 
