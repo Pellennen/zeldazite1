@@ -1,5 +1,6 @@
 function change_image() {
   let url = document.querySelector('img#change_image').src;
+  console.log(url);
     if(url == 'http://localhost:4000/assets/images/awakening/linkright.png') {
       document.querySelector('img#change_image').src = 'http://localhost:4000/assets/images/awakening/linkleft.png';
     } 

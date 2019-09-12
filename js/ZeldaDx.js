@@ -1,11 +1,12 @@
-﻿
+﻿//Scripten startas när window har laddat klart.
 window.onload = function () {
+    //Aktiverar funktionen
     loadNewAnimation();
 };
 
 function loadNewAnimation() {
 
-    // 
+    //Lagrar innehållet 
     let jadsdsEnginemapmapzdxTalTalMountainc = new JadsdsEngine('mapzdxTalTalMountainc');
     jadsdsEnginemapmapzdxTalTalMountainc.fixCanvasSize = false;
     jadsdsEnginemapmapzdxTalTalMountainc.loadAnimationScreen = "zdxTalTalMountaincLoading";
@@ -15,11 +16,6 @@ function loadNewAnimation() {
     
 
     //-----------------------------------------------------------------------------------------------------
-
-   
-
-
-    
 
     let jadsdsEnginemapzdxForest = new JadsdsEngine('mapzdxForest');
     jadsdsEnginemapzdxForest.fixCanvasSize = false;
